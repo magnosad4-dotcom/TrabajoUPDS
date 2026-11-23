@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaWeb — Presentación de Proyecto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar__content">
+      <a href="#" class="logo">NovaWeb</a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#caracteristicas">Características</a>
+        <a href="#demo">Demo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button id="btnTema" class="btn btn--ghost" type="button">Modo oscuro</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <span class="badge">Proyecto Web</span>
+        <h1>Interfaces limpias, rápidas y bien estructuradas</h1>
+        <p class="hero__subtitle">
+          Base web organizada con HTML5 semántico, diseño responsivo en CSS3 y
+          comportamiento interactivo en JavaScript.
+        </p>
+        <div class="hero__actions">
+          <a href="#demo" class="btn btn--primary">Probar interacción</a>
+          <a href="#caracteristicas" class="btn btn--secondary">Ver módulos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="caracteristicas" class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2>Estructura del proyecto</h2>
+          <p>Separación clara de responsabilidades para facilitar el mantenimiento.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>HTML5 Semántico</h3>
+            <p>Etiquetas claras (<code>header</code>, <code>main</code>, <code>section</code>, <code>footer</code>) y accesibilidad básica.</p>
+          </article>
+          <article class="card">
+            <h3>CSS3 Responsivo</h3>
+            <p>Variables CSS, diseño adaptable a distintos tamaños de pantalla y estados visuales coherentes.</p>
+          </article>
+          <article class="card">
+            <h3>JavaScript Limpio</h3>
+            <p>Manipulación del DOM, manejo de eventos y cambio de tema sin dependencias externas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section section--alt">
+      <div class="container demo-box">
+        <h2>Panel de prueba interactiva</h2>
+        <p id="estadoDemo">Estado actual: 0 acciones registradas.</p>
+        <button id="btnRegistrar" class="btn btn--primary" type="button">
+          Registrar acción
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="footer">
+    <div class="container footer__content">
+      <p>NovaWeb — Plantilla base HTML, CSS y JavaScript.</p>
+      <p class="footer__meta">Actualizado en 2026</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
